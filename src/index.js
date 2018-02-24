@@ -2,45 +2,42 @@ class Sorter {
   
   constructor() {
     // your implementation
-    this.name = 'Sorter';
+   this.kot = new Array();
   }
 
   add(element) {
     // your implementation
-    var add = [5,6];
-    return add;
+    var mas = new Array();
+    mas = this.kot.push(element);
+    return mas;
   }
 
   at(index) {
     // your implementation
-    for (var i = 0; i < this.add().length; ++i)
-        {
-          index = this.add()[i];
-              return index;
-       }
+    return  this.kot[index]; 
   }
 
   get length() {
     // your implementation
-    var a = this.add().length;
-    return a; 
+    var ak = this.kot.length;
+    return ak; 
   }
 
   toArray() {
     // your implementation
-   var b = [];
-   b = this.add();
-  return b;
+    var b;
+    b = this.kot;
+    return b;
   }
 
   sort(indices) {
     // your implementation
-  
+   this.kot.sort(indices);        
   }
 
   setComparator(compareFunction) {
     // your implementation
-    
+  this.kot.compareFunction;
   }
 }
 
