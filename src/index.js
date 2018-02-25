@@ -25,19 +25,20 @@ class Sorter {
 
   toArray() {
     // your implementation
-    var b;
+    var b =[];
     b = this.kot;
     return b;
   }
 
   sort(indices) {
     // your implementation
-   this.kot.sort(indices);        
+    for (var i=indices; indices<this.kot.length; i++)
+    this.kot.sort();        
   }
 
   setComparator(compareFunction) {
     // your implementation
-  this.kot.compareFunction;
+    this.kot.compareFunction;
   }
 }
 
