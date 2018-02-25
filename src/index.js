@@ -32,13 +32,14 @@ class Sorter {
 
   sort(indices) {
     // your implementation
-    for (var i=indices; indices<this.kot.length; i++)
-    this.kot.sort();        
+    
+    this.kot.sort();
+    
   }
 
   setComparator(compareFunction) {
     // your implementation
-    this.kot.compareFunction;
+    this.kot.sort(compareFunction);
   }
 }
 
